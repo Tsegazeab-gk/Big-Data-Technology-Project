@@ -1,0 +1,29 @@
+#read me
+This project is developed using Scala and Apache kafka.The Spark producer project will stream tweets from Twitter and produce to Kafka stream.
+The Sprak consumer project will consume from apache Kafka and persist to Hive to make big data analysis.
+To use Kafka I use the below command
+ Navigate or cd to /opt/kafka  because Kafka is installed in that directory
+  run bin/kafka-server-start.sh config/server.properties
+
+To test Kafka Producer
+kafka-console-producer.sh --broker-list localhost:9092 --topic topic-tweets
+
+To test Kafka consumer
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-tweets --from-beginning
+
+Spark producer project functionality
+	Configuring spark context
+	Connecting to twitter
+	Mapping the response data to local  requirement
+	Connecting to Kafka and publish the tweets to topic-tweets
+
+Spark Consumer
+Configuring Spark context
+Getting tweet values and transform to local requirement
+Placing or creating temporary view to held the values
+Managing check point  and persisting data
+It hold hive query to analyses tweets
+
+Research
+
+In order to finish this project, I have made some researches on how to install Kafka and use Scala programming. I have also studied  how twitter streaming is working with Big data analysis

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="log4j-1.2.17">
+    <CLASSES>
+      <root url="jar:///usr/local/Cellar/apache-spark/2.4.5/libexec/jars/log4j-1.2.17.jar!/" />
+      <root url="jar:///usr/local/Cellar/apache-spark/2.4.5/libexec/jars/logging-interceptor-3.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
