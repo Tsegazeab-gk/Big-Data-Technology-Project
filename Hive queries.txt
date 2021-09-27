@@ -1,0 +1,13 @@
+
+Getting users with top followers
+SELECT userId from tweets ORDER BY followersCount DESC LIMIT 5
+
+usersTopFriends
+SELECT userId from tweets ORDER BY friendsCount DESC LIMIT 5
+
+topSpoken Language
+
+SELECT lang, COUNT(*) as tweet from tweets GROUP BY lang ORDER BY tweet DESC LIMIT 3
+
+selecting 20 tweets
+SELECT * from tweets limit 20

@@ -1,0 +1,15 @@
+Please not tht due to some performance and configuration issue, I have run the projects using scala IDE using run as Scala Application
+
+spark-submit \
+  --class edu.cs523.ProduceTweets \
+  -- master yarn \
+  -- /home/cloudera/Desktop/Project/SparkProducer/target/Spark Producer.jar
+
+
+
+
+
+spark-submit \
+  --class edu.cs523.SparkConsumer \
+  -- master yarn \
+  -- /home/cloudera/Desktop/Project/SparkProducer/target/Spark Consumer.jar
